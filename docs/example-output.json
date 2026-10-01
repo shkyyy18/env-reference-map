@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "synthetic_demo": true,
+  "files_scanned": 1,
+  "references": [
+    {
+      "file": "synthetic.py",
+      "line": 2,
+      "access": "read",
+      "name": "APP_MODE"
+    },
+    {
+      "file": "synthetic.py",
+      "line": 3,
+      "access": "read",
+      "name": "CACHE_URL"
+    }
+  ],
+  "unresolved": [
+    {
+      "file": "synthetic.py",
+      "line": 5,
+      "access": "read",
+      "reason": "nonliteral or missing key; expression not exported"
+    }
+  ],
+  "not_declared": [
+    {
+      "name": "CACHE_URL"
+    }
+  ],
+  "declared_not_observed": [
+    {
+      "name": "LEGACY_FLAG"
+    }
+  ],
+  "skipped_files": [],
+  "finding_count": 2,
+  "boundary": "No dataflow or scope resolution. Declared-not-observed is not proof unused. No .env values loaded. Findings count missing names + unresolved uses + skipped symlink files."
+}
